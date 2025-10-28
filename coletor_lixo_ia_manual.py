@@ -186,9 +186,6 @@ def selecionar_pasta_e_treinar():
     if pasta_imagens:
         treinar_modelo(pasta_imagens)
 
-# --- FUNÇÕES REMOVIDAS ---
-# capturar_e_analisar() <-- REMOVIDA
-# habilitar_botao_analisar() <-- REMOVIDA (lógica movida para carregar_modelo)
 
 def interface_grafica():
     global label_img, btn_analisar_snapshot

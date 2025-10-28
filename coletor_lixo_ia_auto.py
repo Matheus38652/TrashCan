@@ -11,18 +11,14 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.applications import MobileNetV2
 from PIL import Image, ImageTk
 
-# --- Variáveis Globais ---
 model = None
 class_indices = None
 cap = None
 label_img = None
-btn_analise_auto = None # <-- MUDANÇA: Renomeado de btn_analisar_snapshot
-analise_automatica_ativa = False # <-- MUDANÇA: O nosso "interruptor"
+btn_analise_auto = None
+analise_automatica_ativa = False
 
-# --- CONSTANTE DE TEMPO ---
-# Intervalo entre as análises em milissegundos (ex: 3000ms = 3 segundos)
-# Este é o "fôlego" do robô. Ajuste conforme a necessidade.
-TEMPO_DE_ESPERA_MS = 3000
+TEMPO_DE_ESPERA_MS = 5000
 
 # (Funções de treinar e carregar o modelo permanecem iguais...)
 def verificar_estrutura_pasta(pasta_imagens):
